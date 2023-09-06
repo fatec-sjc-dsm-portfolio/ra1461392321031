@@ -24,3 +24,5 @@ As linguagens utilizadas para desenvolver o projeto serão as seguintes:
 ## Pré-requisitos
 1. Ter um computador.
 2. Instalar uma ferramenta de desenvolvimento web. Clique [aqui](https://cynoteck.com/pt/blog-post/web-development-tools/) para acessar um website que aponta algumas dessas ferramentas que você pode instalar em sua máquina.
+
+(Validação professor FGMC - 1DSM - 2023-02)
