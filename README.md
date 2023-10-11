@@ -2,7 +2,7 @@
 ## Autor: Renato Fernandes da Cruz Júnior
 
 <p align="center">
-<img src="/mgt/perfil.png" width="200" height="200" alt="Foto de perfil"/>
+<img src="./mgt/perfil.png" width="200" height="200" alt="Foto de perfil"/>
 </p>
 
 ## Descrição das pastas
@@ -13,7 +13,7 @@
 1. Crie uma pasta vazia.
 2. Clone o repositório com:
 ```console 
-	git clone https://github.com/Renato-Cruz-Jr/teste.git  .
+	git clone https://github.com/Renato-Cruz-Jr/portfolio_digital_dsm.git  .
 ```
 
 ## Linguagens
@@ -24,5 +24,50 @@ As linguagens utilizadas para desenvolver o projeto serão as seguintes:
 ## Pré-requisitos
 1. Ter um computador.
 2. Instalar uma ferramenta de desenvolvimento web. Clique [aqui](https://cynoteck.com/pt/blog-post/web-development-tools/) para acessar um website que aponta algumas dessas ferramentas que você pode instalar em sua máquina.
+
+
+# Como executar o projeto:
+
+## 1. Tenha o [Python](https://www.python.org/downloads/) instalado em seu computador.
+
+## 2. Abra o terminal do seu sistema.
+
+## 3. Clone o repositório do GitHub com o seguinte comando:
+
+```
+git clone https://github.com/Renato-Cruz-Jr/portfolio_digital_dsm
+```
+
+## 4. Dentro do diretório baixado, abra o terminal.
+
+## 5. Crie e inicie o ambiente virtual:
+```
+python -m venv venv
+.\venv\Scripts\activate
+```
+Caso esteja utilizando linux:
+```
+python3 -m venv venv
+source venv\bin\activate
+```
+## 6. Navegue para a pasta da aplicação:
+```
+cd src
+```
+
+## 6. Instale o flask e os componentes necessários:
+```
+pip install -r req.txt
+```
+## 7. Inicie o flask:
+```
+flask run
+```
+## 8. Navegue para o endereço http://127.0.0.1:5000 para acessar a aplicação
+
+## 9. Para encerrar a instância utilize:
+```
+deactivate
+```
 
 (Validação professor FGMC - 1DSM - 2023-02)
