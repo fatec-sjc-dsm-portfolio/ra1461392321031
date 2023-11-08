@@ -41,31 +41,47 @@ git clone https://github.com/Renato-Cruz-Jr/portfolio_digital_dsm
 ## 4. Dentro do diretório baixado, abra o terminal.
 
 ## 5. Crie e inicie o ambiente virtual:
+
 ```
 python -m venv venv
 .\venv\Scripts\activate
 ```
-Caso esteja utilizando linux:
+
+Caso você esteja utilizando Linux:
+
 ```
 python3 -m venv venv
 source venv\bin\activate
 ```
-## 6. Navegue para a pasta da aplicação:
+
+## 6. Instale o Flask e os componentes necessários:
+
+```
+pip install -r req.txt
+```
+
+## 7. Navegue para a pasta da aplicação:
+
 ```
 cd src
 ```
 
-## 6. Instale o flask e os componentes necessários:
-```
-pip install -r req.txt
-```
-## 7. Inicie o flask:
+## 8. Inicie a execução da aplicação Flask:
+
 ```
 flask run
 ```
-## 8. Navegue para o endereço http://127.0.0.1:5000 para acessar a aplicação
 
-## 9. Para encerrar a instância utilize:
+Ou use:
+
+```
+python app.py
+```
+
+## 9. Navegue para o endereço http://127.0.0.1:5000 para acessar a aplicação.
+
+## 10. Para encerrar a instância, utilize:
+
 ```
 deactivate
 ```
