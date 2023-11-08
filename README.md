@@ -20,6 +20,7 @@
 As linguagens utilizadas para desenvolver o projeto serão as seguintes:
 * HTML: linguagem de marcação utilizada para produção de páginas na web. Com HTML, é possível criar documentos que podem ser lidos em praticamente qualquer tipo de computador e transmitidos pela internet.
 * CSS: linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou XML, a forma como os elementos devem ser renderizados na tela, entre outros.
+* Python: linguagem de alto nível, orientada a objetos, usada para programação. Ela tem semântica dinâmica e é interpretada e vem com estruturas de dados integradas que, quando combinadas com tipagem dinâmica e vinculação dinâmica, a tornam excelente para o desenvolvimento rápido de aplicações. Ela também pode ser utilizada como uma linguagem de colagem ou de script para unir componentes existentes.
 
 ## Pré-requisitos
 1. Ter um computador.
