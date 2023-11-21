@@ -1,104 +1,18 @@
-/* Redefine alguns estilos padrão. */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+/* Reset de estilos padrão */
 body, h1, h2, ul, li, p {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Define uma cor de fundo e uma cor de texto. */
+/* Estilo global */
 body {
     background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-/* Estilo do cabeçalho. */
-header {
-    background-color: #333;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Remove o estilo da lista da navegação do cabeçalho. */
-header ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente. */
-}
-
-/* Estiliza os itens da lista (itens de menu). */
-header li {
-    margin-right: 20px;
-}
-
-/* Estiliza os links dentro dos itens da lista. */
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-header a:hover {
-    color: #0077cc;
-}
-
-/* Estiliza o conteúdo "main". */
-main {
-    flex-grow: 1;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Estiliza as seções. */
-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #c0c0c0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Estiliza os títulos. */
-h1, h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-/* Estiliza as listas não-ordenadas */
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-/* Estiliza os itens de listas em geral. */
-li {
-    margin-bottom: 10px;
-}
-
-/* Configura as imagens para que sejam responsivas e circulares. */
-img.circular {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%; /* Faz a imagem ser circular */
-}
-
-/* Estiliza o rodapé */
-footer {
-    background-color: #333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #444;
 }
 
 /* Estiliza os links */
@@ -109,39 +23,180 @@ a.contato {
 }
 
 a.contato:hover {
-    color: #0077cc;
+    color: #212529;
 }
 
-/* Estiliza os botões para os links. */
-.btn-link {
-    background-color: #c0c0c0;
-    border: none;
-    border-radius: 4px;
-    font-size: inherit;
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
+a.footer {
+    color: white;
     transition: color 0.3s;
-    display: inline-block;
 }
 
-/* Esse estilo é aplicado quando o usuário passa o ponteiro do mouse sobre o link do botão.  */
-.btn-link:hover {
-    background-color: #ffffff;
-    color: #c0c0c0;
+a.footer:hover {
+    color: #6c757d;
 }
 
-/* Esse estilo é aplicado quando o link do botão recebe o foco do teclado,
-normalmente quando um usuário pressiona a tecla "Tab" para navegar pelos elementos
-interativos em uma página da Web. */
-.btn-link:focus {
-    outline: none;
-}
-
-/* Estilo de logo */
-.logo {
-    font-size: 24px;
+/* Estiliza os links. */
+a.custom-link {
+    color: black;
+    text-decoration: none;
     font-weight: bold;
-    color: #ffffff;
-    float: left;
+    transition: color 0.3s, transform 0.3s; 
+    display: inline-block; 
+    border-radius: 4px; 
+    border: 1px solid #212529;
+    margin-right: 3px;
+}
+
+a.custom-link:hover {
+    color: #212529;
+    transform: scale(1.05);
+}
+
+/* Estilo de títulos */
+h1, h2 {
+    color: #333;
+    margin-bottom: 2vh;
+    font-size: 3.5vw;
+}
+
+/* Estilo de listas */
+ul {
+    list-style: disc;
+    margin-left: 3vw;
+}
+
+li {
+    margin-bottom: 1.5vh;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    width: 90%;
+    max-width: 900px;
+    padding: 5vw;
+    margin: 5vh auto;
+    border-radius: 5px;
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+}
+  
+/* Estilo das seções */
+section {
+    margin-bottom: 5vh;
+    padding: 4vw;
+    background-color: #c0c0c0;
+    border-radius: 3vw;
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do conteúdo interno das seções */
+.conteudo {
+    padding: 3vh;
+    line-height: 1.6;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+/* Responsividade usando media queries */
+
+/* Smartphones */
+@media only screen and (max-width: 480px) {
+    h1, h2 {
+        font-size: 6vw;
+        margin-bottom: 5vw;
+    }
+    ul {
+        margin-left: 6vw;
+    }
+    li {
+        margin-bottom: 3vw;
+    }
+    main {
+        padding: 8vw;
+    }
+    section {
+        padding: 6vw;
+        border-radius: 5vw;
+        box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+    }
+    .conteudo {
+        padding: 5vw;
+        font-size: 4vw;
+        line-height: 1.8;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    h1, h2 {
+        font-size: 4vh;
+        margin-bottom: 3vh;
+    }
+    ul {
+        margin-left: 4vw;
+    }
+    li {
+        margin-bottom: 2vh;
+    }
+    main {
+        padding: 6vw;
+    }
+    section {
+        padding: 5vw;
+        border-radius: 4vw;
+        box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.1);
+    }
+    .conteudo {
+        padding: 4vw;
+        font-size: 3vh;
+        line-height: 1.7;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-width: 769px) {
+    h1, h2 {
+        font-size: 3vh;
+        margin-bottom: 2vh;
+    }
+    ul {
+        margin-left: 2vw;
+    }
+    li {
+        margin-bottom: 1vh;
+    }
+    main {
+        padding: 5vh;
+    }
+    section {
+        padding: 4vh;
+        border-radius: 3vw;
+        box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.1);
+    }
+    .conteudo {
+        padding: 3vh;
+        font-size: 2.5vh;
+        line-height: 1.6;
+    }
+}
+
+.filtro-imagem {
+    filter: grayscale(50%) sepia(10%); /* Combinação de escala de cinza e sépia */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra mais intensa */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Contorno mais pronunciado */
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transições suaves para o filtro e transformação */
+}
+  
+.filtro-imagem:hover {
+    filter: grayscale(70%) sepia(20%); /* Ajuste do filtro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+  
+#secao_imagem {
+    text-align: center;
+}
+
+.centralizar {
+    display: inline-block;
 }
