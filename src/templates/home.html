@@ -2,39 +2,40 @@
 
 {% block content %}
 <section>
-    <!-- Introdução -->
-    <h1>Introdução</h1>
-    <p>Meu nome é Renato Fernandes da Cruz Júnior e sou um entusiasta da tecnologia e da programação, apaixonado por aprender e criar coisas incríveis. Atualmente sou aluno da Fatec (Faculdade de Tecnologia) - Prof. Jessen Vidal (São José dos Campos - SP), onde estou cursando Desenvolvimento de Software Multiplataforma.</p>
+    <div class="conteudo">
+        <!-- Introdução -->
+        <h1>Introdução</h1>
+        <p>Meu nome é Renato Fernandes da Cruz Júnior e sou um entusiasta da tecnologia e da programação, apaixonado por aprender e criar coisas incríveis. Atualmente sou aluno da Fatec (Faculdade de Tecnologia) - Prof. Jessen Vidal (São José dos Campos - SP), onde estou cursando Desenvolvimento de Software Multiplataforma.</p>
+    </div>
 </section>
 
 <section>
-    <!-- Interesses e hobbies -->
-    <h2>Interesses</h2>
-    <ul>
-        <li>Desenvolvimento Web</li>
-        <li>Viagens</li>
-        <li>Estudos</li>
-        <li>Música</li>
-    </ul>
+    <div class="conteudo">
+        <!-- Interesses e hobbies -->
+        <h2>Interesses</h2>
+        <ul>
+            <li>Desenvolvimento Web</li>
+            <li>Viagens</li>
+            <li>Estudos</li>
+            <li>Música</li>
+        </ul>
 
-    <h2>Hobbies</h2>
-    <ul>
-        <li>Tocar instrumentos musicais</li>
-        <li>Assistir filmes e séries</li>
-        <li>Praticar esportes</li>
-        <li>Estudar língua estrangeira</li>
-    </ul>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Tocar instrumentos musicais</li>
+            <li>Assistir filmes e séries</li>
+            <li>Praticar esportes</li>
+            <li>Estudar língua estrangeira</li>
+        </ul>
+    </div>
 </section>
 
 <section>
-    <!-- Links para GitHub e LinkedIn -->
-    <h2>Fale comigo</h2>
-    <button class="btn-link"><a href="https://github.com/Renato-Cruz-Jr/" target="_blank">GitHub</a></button>
-    <button class="btn-link"><a href="https://www.linkedin.com/in/renato-fernandes-da-cruz-junior-798582204/" target="_blank">LinkedIn</a></button>
-
-</section>
-
-<section>
-    <img class="circular" src="{{ url_for('static', filename='mgt/perfil.png') }}" alt="Foto de Perfil">
+    <div class="conteudo">
+        <!-- Links para GitHub e LinkedIn -->
+        <h2>Fale comigo</h2>
+        <a href="https://github.com/Renato-Cruz-Jr/" target="_blank" class="custom-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/renato-fernandes-da-cruz-junior-798582204/" target="_blank" class="custom-link">LinkedIn</a>
+    </div>
 </section>
 {% endblock %}
