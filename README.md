@@ -7,7 +7,7 @@
 
 ## Descrição das pastas
 * mgt: Diretório com imagens.
-* src: Diretório com o código-fonte.
+* api: Diretório com o código-fonte.
 
 ## Como inicializar o diretório (Windows / prompt de comando)
 1. Crie uma pasta vazia.
@@ -29,9 +29,9 @@ As linguagens utilizadas para desenvolver o projeto serão as seguintes:
 
 # Como executar o projeto:
 
-## 1. Tenha o [Python](https://www.python.org/downloads/) instalado em seu computador.
+## 1. Instale o [Python](https://www.python.org/downloads/) em seu computador.
 
-## 2. Abra o terminal do seu sistema.
+## 2. Após a instalação, abra o terminal do seu sistema e navegue para a pasta Desktop.
 
 ## 3. Clone o repositório do GitHub com o seguinte comando:
 
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ## 7. Navegue para a pasta da aplicação:
 
 ```
-cd src
+cd api
 ```
 
 ## 8. Inicie a execução da aplicação Flask:
@@ -88,5 +88,27 @@ deactivate
 ```
 
 ## 11. Para verificar o website através do [Vercel](https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma), clique [AQUI](https://portfolio-dsm-renatojr.vercel.app/).
+
+# Como implementar o Vercel
+
+## 1. Instale o [Node.js](https://nodejs.org/en/download) em seu computador.
+
+## 2. Após a instalação do Node.js, abra o terminal e execute o seguinte comando para instalar o Vercel CLI:
+
+```
+npm install -g vercel
+```
+
+## 3. Crie uma conta no [site do Vercel](https://vercel.com/) e faça login.
+
+## 4. No terminal, navegue até a pasta raiz do seu projeto.
+
+## 5. Execute o seguinte comando:
+
+```
+vercel
+```
+
+## 6. Siga as instruções para publicar o projeto no Vercel. Você pode configurar opções como o nome do projeto, domínio, entre outras configurações.
 
 (Validação professor FGMC - 1DSM - 2023-02)
