@@ -58,7 +58,7 @@ source venv\bin\activate
 ## 6. Instale o Flask e os componentes necessários:
 
 ```
-pip install -r req.txt
+pip install -r requirements.txt
 ```
 
 ## 7. Navegue para a pasta da aplicação:
@@ -86,5 +86,7 @@ python app.py
 ```
 deactivate
 ```
+
+## 11. Para verificar o website através do [Vercel](https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma), clique [AQUI](https://portfolio-dsm-renatojr.vercel.app/).
 
 (Validação professor FGMC - 1DSM - 2023-02)
