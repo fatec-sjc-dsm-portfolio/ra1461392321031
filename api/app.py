@@ -2,9 +2,9 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/portfolio')
-def portfolio():
-    portfolio_data = {
+@app.route('/sobre_mim')
+def sobre_mim():
+    sobre_mim_data = {
         'curriculo': {
             'titulo': 'Currículo',
             'itens': [
@@ -40,7 +40,7 @@ def portfolio():
         }
     }
 
-    return render_template('portfolio.html', portfolio_data=portfolio_data)
+    return render_template('sobre_mim.html', sobre_mim_data=sobre_mim_data)
 
 
 @app.route('/')

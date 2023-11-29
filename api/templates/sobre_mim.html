@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 
+{% block title %}
+<title>Renato Cruz Jr. - Sobre Mim</title>
+{% endblock %}
+
 {% block content %}
 
-{% for secao, info_secao in portfolio_data.items() %}
-<!-- Início do loop para iterar sobre as seções do portfólio -->
+{% for secao, info_secao in sobre_mim_data.items() %}
+<!-- Início do loop para iterar sobre as seções do Sobre Mim -->
 <section>
     <div class="conteudo">
         <h1>{{ info_secao['titulo'] }}</h1>
