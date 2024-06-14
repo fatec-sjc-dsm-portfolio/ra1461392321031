@@ -87,7 +87,7 @@ python app.py
 deactivate
 ```
 
-## 11. Para verificar o website através do [Vercel](https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma), clique [AQUI](https://portfolio-dsm-renatojr.vercel.app/).
+## 11. Para verificar o website através do [Vercel](https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma), clique [AQUI](https://renatocruzjr.vercel.app/).
 
 # Como implementar o Vercel
 
