@@ -20,12 +20,20 @@ def sobre_mim():
             'titulo': 'Trabalhos Acadêmicos',
             'projetos': [
                 {
-                    'nome': 'Projeto API: Nefrologia (2023)',
-                    'sobre': 'Em desenvolvimento por alunos da FATEC Prof. Jessen Vidal - SJC, SP. Tem a finalidade de conscientizar, ampliar e facilitar a comunicação de pacientes e famílias que possuem Doença Renal Crônica (DRC).',
+                    'nome': 'Projeto API: Nefrologia (2023/2)',
+                    'sobre': 'Desenvolvido por alunos da FATEC Prof. Jessen Vidal - SJC, SP. Tem a finalidade de conscientizar, ampliar e facilitar a comunicação de pacientes e famílias que possuem Doença Renal Crônica (DRC).',
                     'metodologia': 'Entre as ferramentas utilizadas no Scrum, uma é a divisão do projeto em Sprints...',
                     'visao_produto': 'Para pessoas que procuram se manter informadas sobre nefro pediatria...',
                     'tecnologias': 'Figma, GitHub, HTML, CSS, Discord, Microsoft Teams, Microsoft Excel, Python e Slack.',
                     'link': 'https://github.com/Code-Nine-FTC/Grupo-Code-Nine'
+                },
+                {
+                    'nome': 'Projeto API: PostHelp (2024/2)',
+                    'sobre': 'Desenvolvido por alunos da FATEC Prof. Jessen Vidal - SJC, SP. Tem a finalidade de implementar um sistema de comunicação entre cliente e empresa tendo gerenciamento de chamados e serviços.',
+                    'metodologia': 'O framework de Metodologia Ágil utilizado no produto foi o Scrum, um método ágil adaptativo, iterativo, flexível e eficaz. Entre as ferramentas utilizadas no Scrum, uma é a divisão do projeto em Sprints. Para selecionar quais seriam as entregas das nossas Sprints, primeiro definimos nosso MVP, priorizando as tarefas que trariam maior entrega de valor para o cliente. Então, a partir das Tarefas foi construído o Backlog do Produto, o qual foi aprovado pelo cliente e dividido em 4 Backlogs de Sprint.',
+                    'visao_produto': 'Para pessoas que desejam obter um melhor atendimento e informações a respeito de suas encomendas.',
+                    'tecnologias': 'Figma, GitHub, HTML, CSS, Discord, Microsoft Teams, Microsoft Excel, Python, Slack, Typescript, Node.js, React.',
+                    'link': 'https://github.com/Code-Nine-FTC/API-2024.1'
                 },
                 # Adicione mais projetos aqui se necessário
             ]
