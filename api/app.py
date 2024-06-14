@@ -28,7 +28,7 @@ def sobre_mim():
                     'link': 'https://github.com/Code-Nine-FTC/Grupo-Code-Nine'
                 },
                 {
-                    'nome': 'Projeto API: PostHelp (2024/2)',
+                    'nome': 'Projeto API: PostHelp (2024/1)',
                     'sobre': 'Desenvolvido por alunos da FATEC Prof. Jessen Vidal - SJC, SP. Tem a finalidade de implementar um sistema de comunicação entre cliente e empresa tendo gerenciamento de chamados e serviços.',
                     'metodologia': 'O framework de Metodologia Ágil utilizado no produto foi o Scrum, um método ágil adaptativo, iterativo, flexível e eficaz. Entre as ferramentas utilizadas no Scrum, uma é a divisão do projeto em Sprints. Para selecionar quais seriam as entregas das nossas Sprints, primeiro definimos nosso MVP, priorizando as tarefas que trariam maior entrega de valor para o cliente. Então, a partir das Tarefas foi construído o Backlog do Produto, o qual foi aprovado pelo cliente e dividido em 4 Backlogs de Sprint.',
                     'visao_produto': 'Para pessoas que desejam obter um melhor atendimento e informações a respeito de suas encomendas.',
