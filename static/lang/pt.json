@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "brand": "Renato Cruz Jr.",
+    "about": "Sobre mim",
+    "projects": "Projetos",
+    "info": "Informações"
+  },
+  "home": {
+    "title": "Olá, sou o Renato Cruz Jr!",
+    "subtitle": "Um pouco sobre a minha vida e meus hobbies",
+    "about_title": "Sobre Mim",
+    "about_p1": "Nasci e cresci em <strong>São José dos Campos - SP</strong>. Desde cedo, sempre me interessei por tecnologia. Quando não estou atuando em projetos ou na faculdade, adoro me dedicar aos meus hobbies.",
+    "about_p2": "Sou um grande apreciador de música, gosto de tocar violão, e também adoro viajar. Gosto de passar meu tempo livre explorando novas histórias através da leitura. Sou uma pessoa curiosa que sempre busca aprender mais sobre o mundo."
+  },
+  "projects": {
+    "title": "Projetos de API da FATEC SJC",
+    "professional_title": "Projetos Profissionais",
+    "professional_empty": "Ainda não possuo projetos profissionais publicados. Em breve trarei novidades!",
+    "personal_title": "Projetos Pessoais & Hobbies",
+    "hobbies_title": "Hobbies",
+    "hobbies_intro": "No meu tempo livre, gosto muito de:",
+    "hobbies_list": ["Tocar violão", "Viajar e conhecer novos lugares", "Assistir filmes"],
+    "view_repo": "Ver Repositório",
+    "contributions": "Minhas Contribuições"
+  },
+  "projects_list": {
+    "2026_1": {
+      "title": "2026.1 — Sistema de Análises Ambientais (Visiona)",
+      "role": "6º Semestre | Desenvolvedor Full Stack",
+      "desc": "Soluções de Inteligência Artificial para NLP e análises avançadas.",
+      "contribs": ["Desenvolvimento de fallbacks de resposta e testes.", "Padronização de leitura de coordenadas no sistema.", "Integração de mapas e filtros de resultados."]
+    },
+    "2025_2": {
+      "title": "2025.2 — Gestão Administrativa e Almoxarifado",
+      "role": "5º Semestre | Scrum Master",
+      "desc": "Digitalização da gestão de almoxarifado militar, com rastreamento via QR Code.",
+      "contribs": ["Facilitação de cerimônias ágeis e remoção de impedimentos técnicos da equipe.", "Alinhamento de backlog com Product Owner."]
+    },
+    "2025_1": {
+      "title": "2025.1 — Monitoramento Meteorológico (Tecsus)",
+      "role": "4º Semestre | Desenvolvedor Full Stack",
+      "desc": "Sistema IoT para coleta e visualização de dados ambientais e sensores de alta frequência em tempo real.",
+      "contribs": ["Arquitetura de API com FastAPI para ingestão dos dados.", "Modelagem de banco NoSQL (MongoDB)."]
+    },
+    "2024_2": {
+      "title": "2024.2 — Portal da Transparência (FAPG)",
+      "role": "3º Semestre | Desenvolvedor Full Stack",
+      "desc": "Modernização do portal de auditoria institucional e de projetos de bolsistas.",
+      "contribs": ["Desenvolvimento de Endpoints de pesquisa avançada com Java (Spring Boot) para o backend.", "Estruturação e scripts de ETL de migração do BD legado."]
+    },
+    "2024_1": {
+      "title": "2024.1 — Sistema de Suporte Técnico (HelpDesk)",
+      "role": "2º Semestre | Desenvolvedor Backend",
+      "desc": "Service Desk corporativo com abertura de chamados, suporte automatizado e chat em tempo real.",
+      "contribs": ["Criação de APIs com Node.js e modelagem relacional de tickets (MySQL)."]
+    },
+    "2023_2": {
+      "title": "2023.2 — Plataforma Criança Renal",
+      "role": "1º Semestre | UI Developer",
+      "desc": "Sistema web unificado e voltado ao apoio, acompanhamento e triagem à gestão clínica (formulários interativos).",
+      "contribs": ["Estruturação das páginas interativas da interface inicial e componentização em HTML semântico e CSS nativo."]
+    }
+  },
+  "info": {
+    "title": "Perfil Profissional e Contatos",
+    "subtitle": "Conheça minha trajetória, minhas habilidades e saiba como entrar em contato comigo.",
+    "education_title": "Formação Acadêmica",
+    "education_1_title": "Tecnólogo em Desenvolvimento de Software Multiplataforma",
+    "education_1_institution": "FATEC Prof. Jessen Vidal - São José dos Campos",
+    "education_1_period": "<strong>Período:</strong> Cursando 6º Semestre",
+    "education_2_title": "Técnico em Informática integrado ao Ensino Médio",
+    "education_2_institution": "IFSP - Instituto Federal de São Paulo (Jacareí)",
+    "education_2_period": "<strong>Período:</strong> Concluído",
+    "experience_title": "Experiência Profissional",
+    "experience_1_title": "Professor Auxiliar",
+    "experience_1_company": "Kumon",
+    "experience_1_period": "<strong>Período:</strong> 2017 - Presente",
+    "experience_1_contribs": ["Orientação de alunos no percurso de aprendizagem de matemática.", "Auxílio no desenvolvimento de autonomia e raciocínio lógico."],
+    "skills_title": "Competências Técnicas",
+    "skills_area": "Área",
+    "skills_techs": "Tecnologias",
+    "skills_backend": "Backend",
+    "skills_backend_techs": "Python (Flask, FastAPI), Java (Spring Boot), Node.js",
+    "skills_frontend": "Frontend",
+    "skills_frontend_techs": "React, TypeScript, Vue.js, Flutter, HTML/CSS",
+    "skills_db": "Banco de Dados",
+    "skills_db_techs": "MySQL, PostgreSQL, MongoDB",
+    "skills_devops": "Gestão e DevOps",
+    "skills_devops_techs": "Scrum, Kanban, AWS, Docker, Git",
+    "contact_title": "Vamos conversar?",
+    "contact_subtitle": "Estou disponível para novas oportunidades. Entre em contato por meio das minhas redes:"
+  },
+  "footer": {
+    "copyright": "© 2026 Renato Cruz Jr."
+  },
+  "theme": {
+    "light": "Modo Claro",
+    "dark": "Modo Escuro"
+  },
+  "lang": {
+    "pt": "Português",
+    "en": "English"
+  }
+}

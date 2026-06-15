@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
     <link rel="stylesheet" type="text/css" href="static/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
     <link rel="icon" href="static/mgt/perfil.ico">
     
 <title>Renato Cruz Jr. - Contato</title>
 
 </head>
 <body>
-    <header class="bg-dark text-white py-3">
+    <header class="bg-dark text-white py-2 fixed-top">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html">
-                    Renato Cruz Jr.
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="static/mgt/logo.svg" alt="Logo" width="32" height="32">
+                    <span class="fw-bold" data-i18n="nav.brand">Renato Cruz Jr.</span>
                 </a>
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,15 +26,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Sobre mim</a>
+                                <a class="nav-link" href="index.html" data-i18n="nav.about">Sobre mim</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="projetos.html">Projetos</a>
+                                <a class="nav-link" href="projetos.html" data-i18n="nav.projects">Projetos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="informacoes.html">Informações</a>
+                                <a class="nav-link" href="informacoes.html" data-i18n="nav.info">Informações</a>
                             </li>
                         </ul>
+                        <div class="toggle-group">
+                            <button class="lang-toggle" aria-label="Toggle language">PT</button>
+                            <button class="theme-toggle" aria-label="Dark mode">&#x263E;</button>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -42,65 +47,65 @@
     <main>
         
 <div class="container py-5">
-    <div class="row text-center mb-5">
+        <div class="row text-center mb-5 animate-on-scroll">
         <div class="col-12">
-            <h1 class="display-4 fw-bold">Perfil Profissional e Contatos</h1>
-            <p class="lead text-muted">Conheça minha trajetória, minhas habilidades e saiba como entrar em contato comigo.</p>
+            <h1 class="display-4 fw-bold" data-i18n="info.title">Perfil Profissional e Contatos</h1>
+            <p class="lead text-muted" data-i18n="info.subtitle">Conheça minha trajetória, minhas habilidades e saiba como entrar em contato comigo.</p>
         </div>
     </div>
 
     <!-- Formação e Experiência separadas conforme requisitos -->
-    <section class="mb-5">
-        <h2 class="card-title fw-bold mb-4 text-primary"><span style="font-size: 1.5rem;">🎓</span> Formação Acadêmica</h2>
+    <section class="mb-5 animate-on-scroll">
+        <h2 class="card-title fw-bold mb-4 text-primary"><span style="font-size: 1.5rem;">🎓</span> <span data-i18n="info.education_title">Formação Acadêmica</span></h2>
         <div class="card border-0 shadow-sm mb-4">
             <div class="card-body p-4">
-                <h5 class="fw-bold">Tecnólogo em Desenvolvimento de Software Multiplataforma</h5>
-                <p class="text-muted mb-1">FATEC Prof. Jessen Vidal - São José dos Campos</p>
-                <p class="text-muted small"><strong>Período:</strong> Cursando 6º Semestre</p>
+                <h5 class="fw-bold" data-i18n="info.education_1_title">Tecnólogo em Desenvolvimento de Software Multiplataforma</h5>
+                <p class="text-muted mb-1" data-i18n="info.education_1_institution">FATEC Prof. Jessen Vidal - São José dos Campos</p>
+                <p class="text-muted small" data-i18n="info.education_1_period"><strong>Período:</strong> Cursando 6º Semestre</p>
             </div>
         </div>
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4">
-                <h5 class="fw-bold">Técnico em Informática integrado ao Ensino Médio</h5>
-                <p class="text-muted mb-1">IFSP - Instituto Federal de São Paulo (Jacareí)</p>
-                <p class="text-muted small"><strong>Período:</strong> Concluído</p>
+                <h5 class="fw-bold" data-i18n="info.education_2_title">Técnico em Informática integrado ao Ensino Médio</h5>
+                <p class="text-muted mb-1" data-i18n="info.education_2_institution">IFSP - Instituto Federal de São Paulo (Jacareí)</p>
+                <p class="text-muted small" data-i18n="info.education_2_period"><strong>Período:</strong> Concluído</p>
             </div>
         </div>
     </section>
 
-    <section class="mb-5">
-        <h2 class="card-title fw-bold mb-4 text-primary"><span style="font-size: 1.5rem;">💼</span> Experiência Profissional</h2>
+    <section class="mb-5 animate-on-scroll">
+        <h2 class="card-title fw-bold mb-4 text-primary"><span style="font-size: 1.5rem;">💼</span> <span data-i18n="info.experience_title">Experiência Profissional</span></h2>
         <div class="card border-0 shadow-sm mb-4">
             <div class="card-body p-4">
-                <h5 class="fw-bold">Professor Auxiliar</h5>
-                <p class="text-muted mb-2">Kumon</p>
-                <p class="text-muted small mb-3"><strong>Período:</strong> 2017 - Presente</p>
+                <h5 class="fw-bold" data-i18n="info.experience_1_title">Professor Auxiliar</h5>
+                <p class="text-muted mb-2" data-i18n="info.experience_1_company">Kumon</p>
+                <p class="text-muted small mb-3" data-i18n="info.experience_1_period"><strong>Período:</strong> 2017 - Presente</p>
                 <ul class="text-muted small">
-                    <li>Orientação de alunos no percurso de aprendizagem de matemática.</li>
-                    <li>Auxílio no desenvolvimento de autonomia e raciocínio lógico.</li>
+                    <li data-i18n="info.experience_1_contribs.0">Orientação de alunos no percurso de aprendizagem de matemática.</li>
+                    <li data-i18n="info.experience_1_contribs.1">Auxílio no desenvolvimento de autonomia e raciocínio lógico.</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- Competências -->
-    <section class="mb-5">
-        <h2 class="text-center mb-4 display-6 fw-bold">Competências Técnicas</h2>
+    <section class="mb-5 animate-on-scroll">
+        <h2 class="text-center mb-4 display-6 fw-bold" data-i18n="info.skills_title">Competências Técnicas</h2>
         <div class="card shadow-sm border-0">
             <div class="card-body p-0">
                 <div class="table-responsive">
                     <table class="table table-hover mb-0 align-middle">
                         <thead class="table-light">
                             <tr>
-                                <th scope="col" class="py-3 ps-4">Área</th>
-                                <th scope="col" class="py-3">Tecnologias</th>
+                                <th scope="col" class="py-3 ps-4" data-i18n="info.skills_area">Área</th>
+                                <th scope="col" class="py-3" data-i18n="info.skills_techs">Tecnologias</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="ps-4 fw-bold text-primary">Backend</td><td>Python (Flask, FastAPI), Java (Spring Boot), Node.js</td></tr>
-                            <tr><td class="ps-4 fw-bold text-primary">Frontend</td><td>React, TypeScript, Vue.js, Flutter, HTML/CSS</td></tr>
-                            <tr><td class="ps-4 fw-bold text-primary">Banco de Dados</td><td>MySQL, PostgreSQL, MongoDB</td></tr>
-                            <tr><td class="ps-4 fw-bold text-primary">Gestão e DevOps</td><td>Scrum, Kanban, AWS, Docker, Git</td></tr>
+                            <tr><td class="ps-4 fw-bold text-primary" data-i18n="info.skills_backend">Backend</td><td data-i18n="info.skills_backend_techs">Python (Flask, FastAPI), Java (Spring Boot), Node.js</td></tr>
+                            <tr><td class="ps-4 fw-bold text-primary" data-i18n="info.skills_frontend">Frontend</td><td data-i18n="info.skills_frontend_techs">React, TypeScript, Vue.js, Flutter, HTML/CSS</td></tr>
+                            <tr><td class="ps-4 fw-bold text-primary" data-i18n="info.skills_db">Banco de Dados</td><td data-i18n="info.skills_db_techs">MySQL, PostgreSQL, MongoDB</td></tr>
+                            <tr><td class="ps-4 fw-bold text-primary" data-i18n="info.skills_devops">Gestão e DevOps</td><td data-i18n="info.skills_devops_techs">Scrum, Kanban, AWS, Docker, Git</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -109,9 +114,9 @@
     </section>
 
     <!-- Contato -->
-    <section class="text-center bg-white p-5 rounded shadow-sm">
-        <h2 class="mb-4 fw-bold">Vamos conversar?</h2>
-        <p class="text-muted mb-4 fs-5">Estou disponível para novas oportunidades. Entre em contato por meio das minhas redes:</p>
+    <section class="text-center bg-white p-5 rounded shadow-sm animate-on-scroll">
+        <h2 class="mb-4 fw-bold" data-i18n="info.contact_title">Vamos conversar?</h2>
+        <p class="text-muted mb-4 fs-5" data-i18n="info.contact_subtitle">Estou disponível para novas oportunidades. Entre em contato por meio das minhas redes:</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
             <a class="contato-badge transition-transform" href="mailto:renato.cruzjr@outlook.com">
                 <img src="assets/images/badge_email.svg" alt="Email" height="40"/>
@@ -127,17 +132,36 @@
 </div>
 
     </main>
-    <footer class="bg-dark text-white py-3">
+    <footer class="bg-dark text-white py-4 animate-on-scroll">
         <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto d-flex gap-3">
+                    <a class="footer-social" href="mailto:renato.cruzjr@outlook.com" target="_blank" aria-label="Email">
+                        <img src="assets/images/badge_email.svg" alt="Email" height="28"/>
+                    </a>
+                    <a class="footer-social" href="https://github.com/Renato-Cruz-Jr" target="_blank" aria-label="GitHub">
+                        <img src="assets/images/badge_github.svg" alt="GitHub" height="28"/>
+                    </a>
+                    <a class="footer-social" href="https://www.linkedin.com/in/renato-fernandes-da-cruz-junior-798582204/" target="_blank" aria-label="LinkedIn">
+                        <img src="assets/images/badge_linkedin.svg" alt="LinkedIn" height="28"/>
+                    </a>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center small" data-i18n="footer.copyright">
                     &copy; 2026 Renato Cruz Jr.
                 </div>
-                
             </div>
         </div>
     </footer>
-    <script src="static/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">&#x2191;</button>
+
+    <script src="static/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="static/js/theme.js"></script>
+    <script src="static/js/i18n.js"></script>
+    <script src="static/js/animations.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html>
 

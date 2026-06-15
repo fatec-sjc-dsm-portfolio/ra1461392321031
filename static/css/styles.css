@@ -1,4 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap');
+
+:root {
+    --bg-body: #f9f9f9;
+    --bg-main: #f2f2f2;
+    --bg-section: #c0c0c0;
+    --text-primary: #333;
+    --text-secondary: #555;
+    --text-muted: #6c757d;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --link-color: #333;
+    --link-hover: #212529;
+    --border-color: #dee2e6;
+    --hero-bg: #ffffff;
+    --table-header-bg: #f8f9fa;
+    --footer-bg: #212529;
+    --footer-text: #ffffff;
+    --transition-speed: 0.3s;
+}
+
+[data-theme="dark"] {
+    --bg-body: #0f172a;
+    --bg-main: #1e293b;
+    --bg-section: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --card-bg: #1e293b;
+    --card-shadow: rgba(0, 0, 0, 0.5);
+    --link-color: #60a5fa;
+    --link-hover: #93bbfd;
+    --border-color: #475569;
+    --hero-bg: #1e293b;
+    --table-header-bg: #334155;
+    --header-bg: #0f172a;
+    --footer-bg: #020617;
+    --footer-text: #f1f5f9;
+}
+
 /* Reset de estilos padrão */
 body, h1, h2, ul, li, p {
     margin: 0;
@@ -8,27 +47,30 @@ body, h1, h2, ul, li, p {
 
 /* Estilo global */
 body {
-    background-color: #f9f9f9;
+    background-color: var(--bg-body) !important;
     font-family: 'Titillium Web', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 64px;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    color: var(--text-primary);
 }
 
 /* Estiliza os links */
 a.contato {
-    color: #333;
+    color: var(--link-color);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color var(--transition-speed);
 }
 
 a.contato:hover {
-    color: #212529;
+    color: var(--link-hover);
 }
 
 a.footer {
-    color: white;
-    transition: color 0.3s;
+    color: var(--footer-text);
+    transition: color var(--transition-speed);
 }
 
 a.footer:hover {
@@ -37,24 +79,24 @@ a.footer:hover {
 
 /* Estiliza os links. */
 a.custom-link {
-    color: black;
+    color: var(--text-primary);
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, transform 0.3s; 
+    transition: color var(--transition-speed), transform var(--transition-speed); 
     display: inline-block; 
     border-radius: 4px; 
-    border: 1px solid #212529;
+    border: 1px solid var(--text-primary);
     margin-right: 3px;
 }
 
 a.custom-link:hover {
-    color: #212529;
+    color: var(--link-hover);
     transform: scale(1.05);
 }
 
 /* Estilo de títulos */
 h1, h2 {
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 2vh;
     font-size: 3.5vw;
 }
@@ -76,17 +118,19 @@ main {
     padding: 5vw;
     margin: 5vh auto;
     border-radius: 5px;
-    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
-    background-color: #f2f2f2;
+    box-shadow: 0 1vw 2vw var(--card-shadow);
+    background-color: var(--bg-main);
+    transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
 }
   
 /* Estilo das seções */
 section {
     margin-bottom: 5vh;
     padding: 4vw;
-    background-color: #c0c0c0;
+    background-color: var(--bg-section);
     border-radius: 3vw;
-    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.8vw 1.6vw var(--card-shadow);
+    transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
 }
 
 /* Estilo do conteúdo interno das seções */
@@ -199,4 +243,220 @@ section {
 
 .centralizar {
     display: inline-block;
+}
+
+/* ===== Toggle Buttons ===== */
+.theme-toggle, .lang-toggle {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background var(--transition-speed), transform var(--transition-speed);
+    padding: 0;
+    line-height: 1;
+}
+
+.theme-toggle:hover, .lang-toggle:hover {
+    background: rgba(255,255,255,0.15);
+    transform: scale(1.1);
+}
+
+.lang-toggle {
+    border-radius: 4px;
+    width: auto;
+    padding: 0 10px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.toggle-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 16px;
+}
+
+/* ===== Animações ===== */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll.animate-left {
+    transform: translateX(-30px);
+}
+
+.animate-on-scroll.animate-left.animate-visible {
+    transform: translateX(0);
+}
+
+.animate-on-scroll.animate-right {
+    transform: translateX(30px);
+}
+
+.animate-on-scroll.animate-right.animate-visible {
+    transform: translateX(0);
+}
+
+.animate-on-scroll.animate-scale {
+    transform: scale(0.9);
+}
+
+.animate-on-scroll.animate-scale.animate-visible {
+    transform: scale(1);
+}
+
+/* ===== Dark mode overrides for Bootstrap components ===== */
+[data-theme="dark"] .card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .card-footer {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .text-muted {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: var(--hero-bg) !important;
+}
+
+[data-theme="dark"] .table {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .table-light {
+    background-color: var(--table-header-bg);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .hero-section .bg-white {
+    background-color: var(--hero-bg) !important;
+}
+
+[data-theme="dark"] .list-group-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+/* ===== Footer Social Icons ===== */
+.footer-social {
+    opacity: 0.7;
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer-social:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+[data-theme="dark"] .footer-social {
+    opacity: 0.8;
+}
+
+[data-theme="dark"] .footer-social:hover {
+    opacity: 1;
+}
+
+/* ===== Back to Top ===== */
+.back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: #2563eb;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+[data-theme="dark"] .back-to-top {
+    background-color: #3b82f6;
+}
+
+[data-theme="dark"] .back-to-top:hover {
+    background-color: #60a5fa;
+}
+
+.project-card {
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px var(--card-shadow);
+}
+
+.transition-transform {
+    transition: transform var(--transition-speed);
+}
+
+.transition-transform:hover {
+    transform: scale(1.1);
+}
+
+/* Ajuste no header e footer do modo escuro */
+[data-theme="dark"] header.bg-dark {
+    background-color: var(--header-bg) !important;
+}
+
+[data-theme="dark"] footer.bg-dark {
+    background-color: var(--footer-bg) !important;
+}
+
+/* Transição suave para elementos Bootstrap */
+.card, .btn, .table, .navbar, .bg-white, footer, header {
+    transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed), box-shadow var(--transition-speed);
 }

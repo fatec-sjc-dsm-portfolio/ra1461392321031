@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "brand": "Renato Cruz Jr.",
+    "about": "About me",
+    "projects": "Projects",
+    "info": "Info"
+  },
+  "home": {
+    "title": "Hi, I'm Renato Cruz Jr!",
+    "subtitle": "A little about my life and hobbies",
+    "about_title": "About Me",
+    "about_p1": "I was born and raised in <strong>São José dos Campos - SP, Brazil</strong>. Since an early age, I've always been interested in technology. When I'm not working on projects or at college, I love dedicating time to my hobbies.",
+    "about_p2": "I'm a big music enthusiast, I enjoy playing the guitar, and I also love traveling. I like spending my free time exploring new stories through reading. I'm a curious person who always seeks to learn more about the world."
+  },
+  "projects": {
+    "title": "FATEC SJC API Projects",
+    "professional_title": "Professional Projects",
+    "professional_empty": "I don't have any published professional projects yet. News coming soon!",
+    "personal_title": "Personal Projects & Hobbies",
+    "hobbies_title": "Hobbies",
+    "hobbies_intro": "In my free time, I really enjoy:",
+    "hobbies_list": ["Playing guitar", "Traveling and exploring new places", "Watching movies"],
+    "view_repo": "View Repository",
+    "contributions": "My Contributions"
+  },
+  "projects_list": {
+    "2026_1": {
+      "title": "2026.1 — Environmental Analysis System (Visiona)",
+      "role": "6th Semester | Full Stack Developer",
+      "desc": "Artificial Intelligence solutions for NLP and advanced analytics.",
+      "contribs": ["Development of response fallbacks and testing.", "Standardization of coordinate reading in the system.", "Integration of maps and result filters."]
+    },
+    "2025_2": {
+      "title": "2025.2 — Administrative Management & Warehouse",
+      "role": "5th Semester | Scrum Master",
+      "desc": "Digitalization of military warehouse management with QR Code tracking.",
+      "contribs": ["Facilitation of agile ceremonies and removal of technical impediments.", "Backlog alignment with Product Owner."]
+    },
+    "2025_1": {
+      "title": "2025.1 — Meteorological Monitoring (Tecsus)",
+      "role": "4th Semester | Full Stack Developer",
+      "desc": "IoT system for collecting and visualizing environmental data and high-frequency sensors in real time.",
+      "contribs": ["API architecture with FastAPI for data ingestion.", "NoSQL database modeling (MongoDB)."]
+    },
+    "2024_2": {
+      "title": "2024.2 — Transparency Portal (FAPG)",
+      "role": "3rd Semester | Full Stack Developer",
+      "desc": "Modernization of the institutional audit portal and scholarship projects.",
+      "contribs": ["Development of advanced search endpoints with Java (Spring Boot) for the backend.", "ETL scripts structure and legacy DB migration."]
+    },
+    "2024_1": {
+      "title": "2024.1 — Technical Support System (HelpDesk)",
+      "role": "2nd Semester | Backend Developer",
+      "desc": "Corporate Service Desk with ticket opening, automated support, and real-time chat.",
+      "contribs": ["API creation with Node.js and relational ticket modeling (MySQL)."]
+    },
+    "2023_2": {
+      "title": "2023.2 — Child Kidney Platform",
+      "role": "1st Semester | UI Developer",
+      "desc": "Unified web system focused on supporting, monitoring, and triaging clinical management (interactive forms).",
+      "contribs": ["Structure of interactive interface pages and componentization with semantic HTML and native CSS."]
+    }
+  },
+  "info": {
+    "title": "Professional Profile & Contacts",
+    "subtitle": "Learn about my journey, my skills, and how to get in touch with me.",
+    "education_title": "Education",
+    "education_1_title": "Bachelor's Degree in Multiplatform Software Development",
+    "education_1_institution": "FATEC Prof. Jessen Vidal - São José dos Campos",
+    "education_1_period": "<strong>Period:</strong> Currently in 6th Semester",
+    "education_2_title": "IT Technician integrated with High School",
+    "education_2_institution": "IFSP - Federal Institute of São Paulo (Jacareí)",
+    "education_2_period": "<strong>Period:</strong> Completed",
+    "experience_title": "Professional Experience",
+    "experience_1_title": "Assistant Teacher",
+    "experience_1_company": "Kumon",
+    "experience_1_period": "<strong>Period:</strong> 2017 - Present",
+    "experience_1_contribs": ["Guiding students in the math learning path.", "Helping develop autonomy and logical reasoning."],
+    "skills_title": "Technical Skills",
+    "skills_area": "Area",
+    "skills_techs": "Technologies",
+    "skills_backend": "Backend",
+    "skills_backend_techs": "Python (Flask, FastAPI), Java (Spring Boot), Node.js",
+    "skills_frontend": "Frontend",
+    "skills_frontend_techs": "React, TypeScript, Vue.js, Flutter, HTML/CSS",
+    "skills_db": "Database",
+    "skills_db_techs": "MySQL, PostgreSQL, MongoDB",
+    "skills_devops": "Management & DevOps",
+    "skills_devops_techs": "Scrum, Kanban, AWS, Docker, Git",
+    "contact_title": "Let's talk?",
+    "contact_subtitle": "I'm available for new opportunities. Get in touch through my networks:"
+  },
+  "footer": {
+    "copyright": "© 2026 Renato Cruz Jr."
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "lang": {
+    "pt": "Português",
+    "en": "English"
+  }
+}

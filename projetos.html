@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
     <link rel="stylesheet" type="text/css" href="static/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
     <link rel="icon" href="static/mgt/perfil.ico">
     <title>Renato Cruz Jr. - Portfólio</title>
 </head>
 <body>
-    <header class="bg-dark text-white py-3">
+    <header class="bg-dark text-white py-2 fixed-top">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="index.html">Renato Cruz Jr.</a>
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="static/mgt/logo.svg" alt="Logo" width="32" height="32">
+                    <span class="fw-bold" data-i18n="nav.brand">Renato Cruz Jr.</span>
+                </a>
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Sobre mim</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="informacoes.html">Informações</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.about">Sobre mim</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projetos.html" data-i18n="nav.projects">Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="informacoes.html" data-i18n="nav.info">Informações</a></li>
                         </ul>
+                        <div class="toggle-group">
+                            <button class="lang-toggle" aria-label="Toggle language">PT</button>
+                            <button class="theme-toggle" aria-label="Dark mode">&#x263E;</button>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -33,125 +40,125 @@
         <div class="container py-5">
             <!-- Projetos FATEC -->
             <section class="mb-5">
-                <h2 class="text-center mb-5 display-5 fw-bold text-primary">Projetos de API da FATEC SJC</h2>
+                <h2 class="text-center mb-5 display-5 fw-bold text-primary animate-on-scroll" data-i18n="projects.title">Projetos de API da FATEC SJC</h2>
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     
                     <!-- 2026.1 -->
-                    <div class="col">
+                    <div class="col animate-on-scroll">
                         <div class="card h-100 shadow-sm project-card">
-                            <img src="assets/images/proj_2026_1.png" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #eee;">
+                            <img src="assets/images/proj_2026_1.png" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: var(--bg-section); padding: 10px; border-bottom: 1px solid var(--border-color);">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">2026.1 — Sistema de Análises Ambientais (Visiona)</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">6º Semestre | Desenvolvedor Full Stack</h6>
-                                <p class="card-text mt-3">Soluções de Inteligência Artificial para NLP e análises avançadas.</p>
+                                <h5 class="card-title fw-bold" data-i18n="projects_list.2026_1.title">2026.1 — Sistema de Análises Ambientais (Visiona)</h5>
+                                <h6 class="card-subtitle mb-2 text-muted" data-i18n="projects_list.2026_1.role">6º Semestre | Desenvolvedor Full Stack</h6>
+                                <p class="card-text mt-3" data-i18n="projects_list.2026_1.desc">Soluções de Inteligência Artificial para NLP e análises avançadas.</p>
                                 <div class="mb-3">
-                                    <strong>Minhas Contribuições:</strong>
+                                    <strong data-i18n="projects.contributions">Minhas Contribuições:</strong>
                                     <ul class="small mt-1">
-                                        <li>Desenvolvimento de fallbacks de resposta e testes.</li>
-                                        <li>Padronização de leitura de coordenadas no sistema.</li>
-                                        <li>Integração de mapas e filtros de resultados.</li>
+                                        <li data-i18n="projects_list.2026_1.contribs.0">Desenvolvimento de fallbacks de resposta e testes.</li>
+                                        <li data-i18n="projects_list.2026_1.contribs.1">Padronização de leitura de coordenadas no sistema.</li>
+                                        <li data-i18n="projects_list.2026_1.contribs.2">Integração de mapas e filtros de resultados.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2026.1" class="btn btn-outline-primary w-100">Ver Repositório</a></div>
+                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2026.1" class="btn btn-outline-primary w-100" data-i18n="projects.view_repo">Ver Repositório</a></div>
                         </div>
                     </div>
 
                     <!-- 2025.2 -->
-                    <div class="col">
+                    <div class="col animate-on-scroll">
                         <div class="card h-100 shadow-sm project-card">
-                            <img src="assets/images/proj_2025_2.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #eee;">
+                            <img src="assets/images/proj_2025_2.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: var(--bg-section); padding: 10px; border-bottom: 1px solid var(--border-color);">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">2025.2 — Gestão Administrativa e Almoxarifado</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">5º Semestre | Scrum Master</h6>
-                                <p class="card-text mt-3">Digitalização da gestão de almoxarifado militar, com rastreamento via QR Code.</p>
+                                <h5 class="card-title fw-bold" data-i18n="projects_list.2025_2.title">2025.2 — Gestão Administrativa e Almoxarifado</h5>
+                                <h6 class="card-subtitle mb-2 text-muted" data-i18n="projects_list.2025_2.role">5º Semestre | Scrum Master</h6>
+                                <p class="card-text mt-3" data-i18n="projects_list.2025_2.desc">Digitalização da gestão de almoxarifado militar, com rastreamento via QR Code.</p>
                                 <div class="mb-3">
-                                    <strong>Minhas Contribuições:</strong>
+                                    <strong data-i18n="projects.contributions">Minhas Contribuições:</strong>
                                     <ul class="small mt-1">
-                                        <li>Facilitação de cerimônias ágeis e remoção de impedimentos técnicos da equipe.</li>
-                                        <li>Alinhamento de backlog com Product Owner.</li>
+                                        <li data-i18n="projects_list.2025_2.contribs.0">Facilitação de cerimônias ágeis e remoção de impedimentos técnicos da equipe.</li>
+                                        <li data-i18n="projects_list.2025_2.contribs.1">Alinhamento de backlog com Product Owner.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2025.2" class="btn btn-outline-primary w-100">Ver Repositório</a></div>
+                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2025.2" class="btn btn-outline-primary w-100" data-i18n="projects.view_repo">Ver Repositório</a></div>
                         </div>
                     </div>
 
                     <!-- 2025.1 -->
-                    <div class="col">
+                    <div class="col animate-on-scroll">
                         <div class="card h-100 shadow-sm project-card">
-                            <img src="assets/images/proj_2025_1.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #eee;">
+                            <img src="assets/images/proj_2025_1.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: var(--bg-section); padding: 10px; border-bottom: 1px solid var(--border-color);">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">2025.1 — Monitoramento Meteorológico (Tecsus)</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">4º Semestre | Desenvolvedor Full Stack</h6>
-                                <p class="card-text mt-3">Sistema IoT para coleta e visualização de dados ambientais e sensores de alta frequêcia em tempo real.</p>
+                                <h5 class="card-title fw-bold" data-i18n="projects_list.2025_1.title">2025.1 — Monitoramento Meteorológico (Tecsus)</h5>
+                                <h6 class="card-subtitle mb-2 text-muted" data-i18n="projects_list.2025_1.role">4º Semestre | Desenvolvedor Full Stack</h6>
+                                <p class="card-text mt-3" data-i18n="projects_list.2025_1.desc">Sistema IoT para coleta e visualização de dados ambientais e sensores de alta frequência em tempo real.</p>
                                 <div class="mb-3">
-                                    <strong>Minhas Contribuições:</strong>
+                                    <strong data-i18n="projects.contributions">Minhas Contribuições:</strong>
                                     <ul class="small mt-1">
-                                        <li>Arquitetura de API com FastAPI para ingestão dos dados.</li>
-                                        <li>Modelagem de banco NoSQL (MongoDB).</li>
+                                        <li data-i18n="projects_list.2025_1.contribs.0">Arquitetura de API com FastAPI para ingestão dos dados.</li>
+                                        <li data-i18n="projects_list.2025_1.contribs.1">Modelagem de banco NoSQL (MongoDB).</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2025.1" class="btn btn-outline-primary w-100">Ver Repositório</a></div>
+                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2025.1" class="btn btn-outline-primary w-100" data-i18n="projects.view_repo">Ver Repositório</a></div>
                         </div>
                     </div>
 
                     <!-- 2024.2 -->
-                    <div class="col">
+                    <div class="col animate-on-scroll">
                         <div class="card h-100 shadow-sm project-card">
-                            <img src="assets/images/proj_2024_2.svg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #eee;">
+                            <img src="assets/images/proj_2024_2.svg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: var(--bg-section); padding: 10px; border-bottom: 1px solid var(--border-color);">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">2024.2 — Portal da Transparência (FAPG)</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">3º Semestre | Desenvolvedor Full Stack</h6>
-                                <p class="card-text mt-3">Modernização do portal de auditoria institucional e de projetos de bolsistas.</p>
+                                <h5 class="card-title fw-bold" data-i18n="projects_list.2024_2.title">2024.2 — Portal da Transparência (FAPG)</h5>
+                                <h6 class="card-subtitle mb-2 text-muted" data-i18n="projects_list.2024_2.role">3º Semestre | Desenvolvedor Full Stack</h6>
+                                <p class="card-text mt-3" data-i18n="projects_list.2024_2.desc">Modernização do portal de auditoria institucional e de projetos de bolsistas.</p>
                                 <div class="mb-3">
-                                    <strong>Minhas Contribuições:</strong>
+                                    <strong data-i18n="projects.contributions">Minhas Contribuições:</strong>
                                     <ul class="small mt-1">
-                                        <li>Desenvolvimento de Endpoints de pesquisa avançada com Java (Spring Boot) para o backend.</li>
-                                        <li>Estruturação e scripts de ETL de migração do BD legado.</li>
+                                        <li data-i18n="projects_list.2024_2.contribs.0">Desenvolvimento de Endpoints de pesquisa avançada com Java (Spring Boot) para o backend.</li>
+                                        <li data-i18n="projects_list.2024_2.contribs.1">Estruturação e scripts de ETL de migração do BD legado.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2024.2" class="btn btn-outline-primary w-100">Ver Repositório</a></div>
+                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2024.2" class="btn btn-outline-primary w-100" data-i18n="projects.view_repo">Ver Repositório</a></div>
                         </div>
                     </div>
 
                      <!-- 2024.1 -->
-                     <div class="col">
+                     <div class="col animate-on-scroll">
                         <div class="card h-100 shadow-sm project-card">
-                            <img src="assets/images/proj_2024_1.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #eee;">
+                            <img src="assets/images/proj_2024_1.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: var(--bg-section); padding: 10px; border-bottom: 1px solid var(--border-color);">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">2024.1 — Sistema de Suporte Técnico (HelpDesk)</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2º Semestre | Desenvolvedor Backend</h6>
-                                <p class="card-text mt-3">Service Desk corporativo com abertura de chamados, suporte automatizado e chat em tempo real.</p>
+                                <h5 class="card-title fw-bold" data-i18n="projects_list.2024_1.title">2024.1 — Sistema de Suporte Técnico (HelpDesk)</h5>
+                                <h6 class="card-subtitle mb-2 text-muted" data-i18n="projects_list.2024_1.role">2º Semestre | Desenvolvedor Backend</h6>
+                                <p class="card-text mt-3" data-i18n="projects_list.2024_1.desc">Service Desk corporativo com abertura de chamados, suporte automatizado e chat em tempo real.</p>
                                 <div class="mb-3">
-                                    <strong>Minhas Contribuições:</strong>
+                                    <strong data-i18n="projects.contributions">Minhas Contribuições:</strong>
                                     <ul class="small mt-1">
-                                        <li>Criação de APIs com Node.js e modelagem relacional de tickets (MySQL).</li>
+                                        <li data-i18n="projects_list.2024_1.contribs.0">Criação de APIs com Node.js e modelagem relacional de tickets (MySQL).</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2024.1" class="btn btn-outline-primary w-100">Ver Repositório</a></div>
+                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2024.1" class="btn btn-outline-primary w-100" data-i18n="projects.view_repo">Ver Repositório</a></div>
                         </div>
                     </div>
 
                     <!-- 2023.2 -->
-                    <div class="col">
+                    <div class="col animate-on-scroll">
                         <div class="card h-100 shadow-sm project-card">
-                            <img src="assets/images/proj_2023_2.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #eee;">
+                            <img src="assets/images/proj_2023_2.jpg" class="card-img-top" style="width: 100%; height: 200px; object-fit: contain; background-color: var(--bg-section); padding: 10px; border-bottom: 1px solid var(--border-color);">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">2023.2 — Plataforma Criança Renal</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">1º Semestre | UI Developer</h6>
-                                <p class="card-text mt-3">Sistema web unificado e voltado ao apoio, acompanhamento e triagem à gestão clínica (formulários interativos).</p>
+                                <h5 class="card-title fw-bold" data-i18n="projects_list.2023_2.title">2023.2 — Plataforma Criança Renal</h5>
+                                <h6 class="card-subtitle mb-2 text-muted" data-i18n="projects_list.2023_2.role">1º Semestre | UI Developer</h6>
+                                <p class="card-text mt-3" data-i18n="projects_list.2023_2.desc">Sistema web unificado e voltado ao apoio, acompanhamento e triagem à gestão clínica (formulários interativos).</p>
                                 <div class="mb-3">
-                                    <strong>Minhas Contribuições:</strong>
+                                    <strong data-i18n="projects.contributions">Minhas Contribuições:</strong>
                                     <ul class="small mt-1">
-                                        <li>Estruturação das páginas interativas da interface inicial e componentização em HTML semântico e CSS nativo.</li>
+                                        <li data-i18n="projects_list.2023_2.contribs.0">Estruturação das páginas interativas da interface inicial e componentização em HTML semântico e CSS nativo.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2023.2" class="btn btn-outline-primary w-100">Ver Repositório</a></div>
+                            <div class="card-footer bg-white"><a href="https://github.com/Code-Nine-FTC/API-2023.2" class="btn btn-outline-primary w-100" data-i18n="projects.view_repo">Ver Repositório</a></div>
                         </div>
                     </div>
 
@@ -162,10 +169,10 @@
 
             <!-- Projetos Profissionais -->
             <section class="mb-5">
-                <h2 class="text-center mb-5 display-5 fw-bold text-success">Projetos Profissionais</h2>
+                <h2 class="text-center mb-5 display-5 fw-bold text-success animate-on-scroll" data-i18n="projects.professional_title">Projetos Profissionais</h2>
                 <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col w-100 text-center">
-                        <p class="text-muted fs-5">Ainda não possuo projetos profissionais publicados. Em breve trarei novidades!</p>
+                    <div class="col w-100 text-center animate-on-scroll">
+                        <p class="text-muted fs-5" data-i18n="projects.professional_empty">Ainda não possuo projetos profissionais publicados. Em breve trarei novidades!</p>
                     </div>
                 </div>
             </section>
@@ -174,17 +181,17 @@
 
             <!-- Projetos Pessoais / Hobbies -->
             <section class="mb-5">
-                <h2 class="text-center mb-5 display-5 fw-bold text-info">Projetos Pessoais & Hobbies</h2>
+                <h2 class="text-center mb-5 display-5 fw-bold text-info animate-on-scroll" data-i18n="projects.personal_title">Projetos Pessoais & Hobbies</h2>
                 <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col">
+                    <div class="col animate-on-scroll">
                         <div class="card h-100 shadow-sm border-info">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Hobbies</h5>
-                                <p class="card-text mt-3">No meu tempo livre, gosto muito de:</p>
+                                <h5 class="card-title fw-bold" data-i18n="projects.hobbies_title">Hobbies</h5>
+                                <p class="card-text mt-3" data-i18n="projects.hobbies_intro">No meu tempo livre, gosto muito de:</p>
                                 <ul class="mt-2">
-                                    <li>🎵 Tocar violão</li>
-                                    <li>✈️ Viajar e conhecer novos lugares</li>
-                                    <li>🎬 Assistir filmes</li>
+                                    <li><span data-i18n="projects.hobbies_list.0">Tocar violão</span></li>
+                                    <li><span data-i18n="projects.hobbies_list.1">Viajar e conhecer novos lugares</span></li>
+                                    <li><span data-i18n="projects.hobbies_list.2">Assistir filmes</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -194,11 +201,35 @@
 
         </div>
     </main>
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            &copy; 2026 Renato Cruz Jr.
+    <footer class="bg-dark text-white py-4 animate-on-scroll">
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto d-flex gap-3">
+                    <a class="footer-social" href="mailto:renato.cruzjr@outlook.com" target="_blank" aria-label="Email">
+                        <img src="assets/images/badge_email.svg" alt="Email" height="28"/>
+                    </a>
+                    <a class="footer-social" href="https://github.com/Renato-Cruz-Jr" target="_blank" aria-label="GitHub">
+                        <img src="assets/images/badge_github.svg" alt="GitHub" height="28"/>
+                    </a>
+                    <a class="footer-social" href="https://www.linkedin.com/in/renato-fernandes-da-cruz-junior-798582204/" target="_blank" aria-label="LinkedIn">
+                        <img src="assets/images/badge_linkedin.svg" alt="LinkedIn" height="28"/>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center small" data-i18n="footer.copyright">
+                    &copy; 2026 Renato Cruz Jr.
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="static/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo">&#x2191;</button>
+
+<script src="static/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+<script src="static/js/theme.js"></script>
+<script src="static/js/i18n.js"></script>
+<script src="static/js/animations.js"></script>
+<script src="static/js/main.js"></script>
 </body>
 </html>
